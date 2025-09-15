@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Titulo</title>
+    <link rel="stylesheet" href="global.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="oferta">
+        <div class="carousel">
+          <div class="carousel-track">
+            <div class="carousel-slide">
+              <div class="card">
+                <h2>Oferta 1</h2>
+                <p>Breve descrição sobre o produto</p>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div class="card">
+                <h2>Oferta 2</h2>
+                <p>Breve descrição sobre o produto</p>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div class="card">
+                <h2>Oferta 3</h2>
+                <p>Breve descrição sobre o produto</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-btn prev">&#10094;</button>
+          <button class="carousel-btn next">&#10095;</button>
+        </div>dq
+      </section>
+      <section class="produtos">
+        <h2 style="text-align: center; margin-bottom: 1rem">
+          Ofertas em Destaque
+        </h2>
+        <div class="carousel-multi">
+          <div class="carousel-multi-track">
+            <div class="carousel-multi-slide">
+              <div class="card">
+                <h3>Produto 1</h3>
+                <p>Descrição breve</p>
+              </div>
+            </div>
+            <div class="carousel-multi-slide">
+              <div class="card">
+                <h3>Produto 2</h3>
+                <p>Descrição breve</p>
+              </div>
+            </div>
+            <div class="carousel-multi-slide">
+              <div class="card">
+                <h3>Produto 3</h3>
+                <p>Descrição breve</p>
+              </div>
+            </div>
+            <div class="carousel-multi-slide">
+              <div class="card">
+                <h3>Produto 4</h3>
+                <p>Descrição breve</p>
+              </div>
+            </div>
+            <div class="carousel-multi-slide">
+              <div class="card">
+                <h3>Produto 5</h3>
+                <p>Descrição breve</p>
+              </div>
+            </div>
+            <div class="carousel-multi-slide">
+              <div class="card">
+                <h3>Produto 6</h3>
+                <p>Descrição breve</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-multi-btn multi-prev">&#10094;</button>
+          <button class="carousel-multi-btn multi-next">&#10095;</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+<script>
+  const track = document.querySelector(".carousel-track");
+  const slides = Array.from(track.children);
+  const nextButton = document.querySelector(".next");
+  const prevButton = document.querySelector(".prev");
+
+  let currentIndex = 0;
+
+  function updateSlidePosition() {
+    track.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }
+
+  nextButton.addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    updateSlidePosition();
+  });
+
+  prevButton.addEventListener("click", () => {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    updateSlidePosition();
+  });
+
+  const multiTrack = document.querySelector('.carousel-multi-track');
+    const multiSlides = Array.from(multiTrack.children);
+    const nextMulti = document.querySelector('.multi-next');
+    const prevMulti = document.querySelector('.multi-prev');
+    let multiIndex = 0;
+    const visibleSlides = 3; // quantos aparecem ao mesmo tempo
+
+    function updateMultiPosition() {
+      multiTrack.style.transform = `translateX(-${multiIndex * (100 / visibleSlides)}%)`;
+    }
+
+    nextMulti.addEventListener('click', () => {
+      if (multiIndex < multiSlides.length - visibleSlides) {
+        multiIndex++;
+        updateMultiPosition();
+      }
+    });
+
+    prevMulti.addEventListener('click', () => {
+      if (multiIndex > 0) {
+        multiIndex--;
+        updateMultiPosition();
+      }
+    });
+</script>
