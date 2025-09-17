@@ -23,7 +23,7 @@ prevButton.addEventListener("click", () => {
   updateSlidePosition();
 });
 
-// 🔹 Funções de autoplay
+// Funções de autoplay
 function startSimpleAutoPlay() {
   simpleInterval = setInterval(() => {
     currentIndex = (currentIndex + 1) % slides.length;
@@ -38,7 +38,7 @@ function stopSimpleAutoPlay() {
 // Inicia autoplay
 startSimpleAutoPlay();
 
-// Pausa no hover e retoma ao sair
+// Hover
 track.addEventListener("mouseenter", stopSimpleAutoPlay);
 track.addEventListener("mouseleave", startSimpleAutoPlay);
 
@@ -64,7 +64,7 @@ nextMulti.addEventListener("click", () => {
   if (multiIndex < multiSlides.length - visibleSlides) {
     multiIndex++;
   } else {
-    multiIndex = 0; // reinicia
+    multiIndex = 0; // Reinicia
   }
   updateMultiPosition();
 });
@@ -78,7 +78,7 @@ prevMulti.addEventListener("click", () => {
   updateMultiPosition();
 });
 
-// 🔹 Funções de autoplay
+// Funções de autoplay
 function startMultiAutoPlay() {
   multiInterval = setInterval(() => {
     if (multiIndex < multiSlides.length - visibleSlides) {
