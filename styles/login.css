@@ -1,0 +1,51 @@
+#login {
+  background-color: var(--cor-apoio-1);
+}
+.log {
+  margin: 20px;
+  padding: 5px 20px;
+  height: 93vh;
+  background-color: var(--branco);
+  border-radius: 20px;
+  border: solid 2px black;
+  box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.3);
+}
+.log p {
+  margin-top: 8px;
+}
+.log a {
+  margin-left: 30px;
+  border: solid 2px var(--cor-apoio-2);
+  border-radius: 5px;
+  background-color: #4564ff;
+  color: var(--branco);
+  padding: 5px 10px;
+  text-decoration: none;
+  display: inline-block; /* necessário para usar transform/scale em links */
+  transition: background-color 0.5s ease, transform 0.3s ease;
+}
+
+.log a:hover {
+  transform: scale(1.1);
+}
+
+.log a:active {
+  transform: scale(0.9);
+  background-color: #2f49cd;
+}
+
+form {
+  margin: 30px;
+}
+.desc {
+  margin: 50px;
+}
+input.caixa {
+  width: 200px;
+}
+.email {
+  margin-left: 6px;
+}
+.submit {
+  padding: 1px 4px;
+}
