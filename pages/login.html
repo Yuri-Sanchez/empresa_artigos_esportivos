@@ -1,31 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Titulo</title>
     <link rel="stylesheet" href="../styles/global.css" />
-    <link rel="stylesheet" href="../styles/login.css">
+    <link rel="stylesheet" href="../styles/login.css" />
   </head>
-<body id="login">
-    <div class="log">
-        <div class="desc">
-            <h1>Login na nossa página</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates dolorum, iusto soluta, voluptatem quia vero tempore nam voluptas hic atque iure enim illo nesciunt sequi optio vitae sit. Obcaecati, in.</p>
-        </div>
-        <form action="">
-            <label for="email">EMAIL:</label>
-            <input type="email" id="email" name="login" value="" class="caixa email"><br>
-            <label for="senha">SENHA:</label>
-            <input type="password" id="senha" name="login" value="" class="caixa"><br><br>
-            <label for="">TIPO:</label><br><br>
-            <input type="radio" id="cpf" name="login" value="CPF" class="radio">
-            <label for="cpf">CPF</label><br>
-            <input type="radio" id="cnpj" name="login" value="CNPJ" class="radio">
-            <label for="cnpj">CNPJ</label><br>
-            <input type="submit" value="Enviar" class="submit">
+  <body id="login">
+    <main>
+      <section>
+        <h1>Login na nossa página</h1>
+        <p>Faça login para acessar todos os recursos disponíveis.</p>
+        <form id="formLogin" method="post" novalidate>
+          <div>
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Digite seu email"
+              required
+            /><br />
+            <span class="erro" id="erro-email"></span>
+          </div>
+          <div>
+            <label for="senha">Senha:</label>
+            <input
+              type="password"
+              id="senha"
+              name="senha"
+              placeholder="Digite sua senha"
+              required
+            /><br />
+            <span class="erro" id="erro-senha"></span>
+          </div>
+          <fieldset>
+            <legend>Tipo de Login:</legend>
+            <div class="radio-group">
+              <label><input type="radio" name="tipo" value="cpf" /> CPF</label>
+              <label
+                ><input type="radio" name="tipo" value="cnpj" /> CNPJ</label
+              >
+            </div>
+            <span class="erro" id="erro-tipo"></span>
+          </fieldset>
+          <input type="submit" value="Entrar" />
         </form>
-        <a href="index.html">Voltar</a>
-    </div>
-</body>
+        <a href="index.html" class="link-voltar">← Voltar</a>
+      </section>
+    </main>
+    <script src="../js/login.js"></script>
+  </body>
 </html>
