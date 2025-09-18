@@ -28,7 +28,7 @@ function startSimpleAutoPlay() {
   simpleInterval = setInterval(() => {
     currentIndex = (currentIndex + 1) % slides.length;
     updateSlidePosition();
-  }, 3000);
+  }, 5000);
 }
 
 function stopSimpleAutoPlay() {
@@ -87,7 +87,7 @@ function startMultiAutoPlay() {
       multiIndex = 0;
     }
     updateMultiPosition();
-  }, 4000);
+  }, 3500);
 }
 
 function stopMultiAutoPlay() {
