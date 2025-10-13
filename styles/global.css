@@ -120,17 +120,28 @@ nav a {
 .next {
   right: 10px;
 }
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 20px 7vw;
+}
+
 .card div {
   margin: 10px 0px;
   background-color: #222;
   width: 400px;
   height: 220px;
 }
+
 .card p {
   margin: 10px 0px;
   font-size: 14px;
   color: #333;
 }
+
 .card img {
   max-width: 100%;
   height: auto;

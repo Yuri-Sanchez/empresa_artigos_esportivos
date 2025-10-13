@@ -43,6 +43,7 @@ body {
 
     input[type="email"],
     input[type="password"] {
+      margin-bottom: 10px;
       padding: 10px;
       border: 1px solid var(--cor-apoio-2);
       border-radius: 8px;
@@ -61,6 +62,7 @@ body {
     fieldset {
       border: 1px solid var(--cor-apoio-2);
       border-radius: 8px;
+      margin: 10px 0;
       padding: 10px 15px;
     }
 
@@ -70,6 +72,7 @@ body {
     }
 
     .radio-group {
+      margin-bottom: 10px;
       display: flex;
       gap: 1rem;
       margin-top: 8px;
@@ -107,12 +110,13 @@ body {
     }
 
     .link-voltar:hover {
-      color: #2f49cd;
+      color: var(--cor-1);
       text-decoration: underline;
     }
 
-    /* Estilo para mensagens de erro */
+    /* Mensagens de erro */
     .erro {
+      position: absolute;
       font-size: 0.8rem;
       color: var(--erro);
       margin-top: -8px;
