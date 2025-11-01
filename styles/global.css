@@ -12,6 +12,7 @@
   --cor-destaque-2: #ff6d00;
   --branco: #fcfcfc;
   --brancobranco: #fff;
+  --preto: #000;
 }
 * {
   margin: 0;
@@ -35,7 +36,7 @@ header {
   z-index: 5;
   width: 100%;
   background-color: var(--cor-1);
-  height: 60px;
+  height: 40px;
 }
 nav {
   height: 100%;
@@ -109,26 +110,20 @@ nav a {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.6);
   border: none;
-  color: var(--brancobranco);
+  background-color: rgb(0, 0, 0, 0);
+  color: var(--preto);
   font-size: 2rem;
   padding: 10px 15px;
   cursor: pointer;
-  border-radius: 50%;
-  transition: background 0.3s;
-}
-
-.carousel-btn:hover {
-  background: rgba(0, 0, 0, 0.8);
 }
 
 .prev {
-  left: 10px;
+  left: -10px;
 }
 
 .next {
-  right: 10px;
+  right: -10px;
 }
 
 .wrap {
@@ -201,24 +196,18 @@ nav a {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0);
   border: none;
-  color: var(--brancobranco);
+  color: var(--preto);
   font-size: 2rem;
   padding: 10px 15px;
   cursor: pointer;
-  border-radius: 50%;
-  transition: background 0.3s;
-}
-
-.carousel-multi-btn:hover {
-  background: rgba(0, 0, 0, 0.8);
 }
 
 .multi-prev {
-  left: 10px;
+  left: -16px;
 }
 
 .multi-next {
-  right: 10px;
+  right: -16px;
 }
