@@ -1,14 +1,17 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap");
-
+/* dq */
 :root {
-  --cor-1: #2f49cd;
-  --cor-2: #2b2b2b;
+  --cor-1: #581845;
+  --cor-2: #ff5733;
+  --cor-1t: #58184576;
+  --cor-2t: #ff573376;
   --cor-apoio-1: #f5f5f5;
   --cor-apoio-2: #b0b0b0;
   --cor-destaque-1: #76ff03;
   --cor-destaque-2: #ff6d00;
   --branco: #fcfcfc;
+  --brancobranco: #fff;
 }
 * {
   margin: 0;
@@ -17,15 +20,22 @@
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 body {
-  background-color: #f5f5f5;
+  padding-top: 50px;
+  background-color: var(--branco);
 }
 h1 {
   text-align: center;
   font-size: 3rem;
 }
 header {
-  background-color: #0057b7;
-  height: 80px;
+  left: 0;
+  right: 0;
+  top: 0;
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  background-color: var(--cor-1);
+  height: 60px;
 }
 nav {
   height: 100%;
@@ -44,7 +54,7 @@ nav li {
   margin-left: 30px;
 }
 nav a {
-  color: #fff;
+  color: var(--brancobranco);
   text-decoration: none;
   font-size: 18px;
 }
@@ -54,7 +64,7 @@ nav a {
   justify-content: space-between;
 }
 .login {
-  color: #fff;
+  color: var(--brancobranco);
   margin-right: 30px;
 }
 .login:hover {
@@ -84,12 +94,12 @@ nav a {
   min-width: 100%;
   padding: 2rem;
   box-sizing: border-box;
-  background: #fff;
+  background: var(--brancobranco);
   text-align: center;
 }
 
 .card {
-  background: #f7f7f7;
+  background: var(--branco);
   border-radius: 8px;
   padding: 1.5rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -101,7 +111,7 @@ nav a {
   transform: translateY(-50%);
   background: rgba(0, 0, 0, 0.6);
   border: none;
-  color: #fff;
+  color: var(--brancobranco);
   font-size: 2rem;
   padding: 10px 15px;
   cursor: pointer;
@@ -193,7 +203,7 @@ nav a {
   transform: translateY(-50%);
   background: rgba(0, 0, 0, 0.6);
   border: none;
-  color: #fff;
+  color: var(--brancobranco);
   font-size: 2rem;
   padding: 10px 15px;
   cursor: pointer;
