@@ -1,14 +1,18 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap");
-
+/* dq */
 :root {
-  --cor-1: #2f49cd;
-  --cor-2: #2b2b2b;
+  --cor-1: #581845;
+  --cor-2: #ff5733;
+  --cor-1t: #58184576;
+  --cor-2t: #ff573376;
   --cor-apoio-1: #f5f5f5;
   --cor-apoio-2: #b0b0b0;
   --cor-destaque-1: #76ff03;
   --cor-destaque-2: #ff6d00;
   --branco: #fcfcfc;
+  --brancobranco: #fff;
+  --preto: #000;
 }
 * {
   margin: 0;
@@ -17,15 +21,22 @@
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 body {
-  background-color: #f5f5f5;
+  padding-top: 50px;
+  background-color: var(--branco);
 }
 h1 {
   text-align: center;
   font-size: 3rem;
 }
 header {
-  background-color: #0057b7;
-  height: 80px;
+  left: 0;
+  right: 0;
+  top: 0;
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  background-color: var(--cor-1);
+  height: 40px;
 }
 nav {
   height: 100%;
@@ -44,7 +55,7 @@ nav li {
   margin-left: 30px;
 }
 nav a {
-  color: #fff;
+  color: var(--brancobranco);
   text-decoration: none;
   font-size: 18px;
 }
@@ -54,7 +65,7 @@ nav a {
   justify-content: space-between;
 }
 .login {
-  color: #fff;
+  color: var(--brancobranco);
   margin-right: 30px;
 }
 .login:hover {
@@ -84,12 +95,12 @@ nav a {
   min-width: 100%;
   padding: 2rem;
   box-sizing: border-box;
-  background: #fff;
+  background: var(--brancobranco);
   text-align: center;
 }
 
 .card {
-  background: #f7f7f7;
+  background: var(--branco);
   border-radius: 8px;
   padding: 1.5rem;
   box-shadow: 0 2px 6px rgba(156, 150, 150, 0.1);
@@ -99,38 +110,56 @@ nav a {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+<<<<<<< HEAD
   background: rgba(134, 126, 126, 0.6);
+=======
+>>>>>>> f80429552a1876a8d4a9b537782895e725cc15b1
   border: none;
-  color: #fff;
+  background-color: rgb(0, 0, 0, 0);
+  color: var(--preto);
   font-size: 2rem;
   padding: 10px 15px;
   cursor: pointer;
+<<<<<<< HEAD
   border-radius: 50%;
   transition: background 0.3s;
 }
 
 .carousel-btn:hover {
   background: rgba(143, 138, 138, 0.8);
+=======
+>>>>>>> f80429552a1876a8d4a9b537782895e725cc15b1
 }
 
 .prev {
-  left: 10px;
+  left: -10px;
 }
 
 .next {
-  right: 10px;
+  right: -10px;
 }
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 20px 7vw;
+}
+
 .card div {
   margin: 10px 0px;
   background-color: #222;
   width: 400px;
   height: 220px;
 }
+
 .card p {
   margin: 10px 0px;
   font-size: 14px;
   color: #333;
 }
+
 .card img {
   max-width: 100%;
   height: auto;
@@ -180,24 +209,31 @@ nav a {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+<<<<<<< HEAD
   background: rgba(139, 134, 134, 0.6);
+=======
+  background: rgba(0, 0, 0, 0);
+>>>>>>> f80429552a1876a8d4a9b537782895e725cc15b1
   border: none;
-  color: #fff;
+  color: var(--preto);
   font-size: 2rem;
   padding: 10px 15px;
   cursor: pointer;
+<<<<<<< HEAD
   border-radius: 50%;
   transition: background 0.3s;
 }
 
 .carousel-multi-btn:hover {
   background: rgba(153, 146, 146, 0.8);
+=======
+>>>>>>> f80429552a1876a8d4a9b537782895e725cc15b1
 }
 
 .multi-prev {
-  left: 10px;
+  left: -16px;
 }
 
 .multi-next {
-  right: 10px;
+  right: -16px;
 }

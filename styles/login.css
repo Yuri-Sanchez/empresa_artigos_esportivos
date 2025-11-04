@@ -42,7 +42,12 @@ body {
     }
 
     input[type="email"],
+<<<<<<< HEAD
     input[type="password"]{
+=======
+    input[type="password"] {
+      margin-bottom: 10px;
+>>>>>>> f80429552a1876a8d4a9b537782895e725cc15b1
       padding: 10px;
       border: 1px solid var(--cor-apoio-2);
       border-radius: 8px;
@@ -55,12 +60,13 @@ body {
     input[type="email"]:focus,
     input[type="password"]:focus {
       border: 1px solid var(--cor-primaria);
-      box-shadow: 0 0 6px rgba(0, 87, 183, 0.4);
+      box-shadow: 0 0 6px var(--cor-1t);
     }
 
     fieldset {
       border: 1px solid var(--cor-apoio-2);
       border-radius: 8px;
+      margin: 10px 0;
       padding: 10px 15px;
     }
 
@@ -70,9 +76,13 @@ body {
     }
 
     .radio-group {
+      margin-bottom: 10px;
       display: flex;
       gap: 1rem;
       margin-top: 8px;
+    }
+    input[type="radio"] {
+      accent-color: var(--cor-1);
     }
 
     input[type="submit"] {
@@ -110,16 +120,23 @@ body {
       transition: color 0.3s;
     }
 
+<<<<<<< HEAD
     .link-cadastro:hover {
       transform: scale(1.03);
     }
 
     .link-cadastro:active {
       transform: scale;
+=======
+    .link-voltar:hover {
+      color: var(--cor-2);
+      text-decoration: underline;
+>>>>>>> f80429552a1876a8d4a9b537782895e725cc15b1
     }
 
-    /* Estilo para mensagens de erro */
+    /* Mensagens de erro */
     .erro {
+      position: absolute;
       font-size: 0.8rem;
       color: var(--erro);
       margin-top: -8px;
