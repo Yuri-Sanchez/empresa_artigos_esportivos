@@ -42,7 +42,7 @@ body {
     }
 
     input[type="email"],
-    input[type="password"] {
+    input[type="password"]{
       padding: 10px;
       border: 1px solid var(--cor-apoio-2);
       border-radius: 8px;
@@ -96,19 +96,26 @@ body {
       transform: scale(0.95);
     }
 
-    .link-voltar {
+    .link-cadastro {
+      width:100%;
       display: block;
-      margin-top: 1rem;
-      text-align: center;
-      color: var(--cor-destaque);
+      margin: 20px 0;
+      padding: 10px;
+      font-weight: bold;
+      background-color: var(--branco);
+      border: 2px solid var(--cor-1);
+      border:redius 8px;
       text-decoration: none;
-      font-size: 0.9rem;
+      color: var(--cor-1);
       transition: color 0.3s;
     }
 
-    .link-voltar:hover {
-      color: #2f49cd;
-      text-decoration: underline;
+    .link-cadastro:hover {
+      transform: scale(1.03);
+    }
+
+    .link-cadastro:active {
+      transform: scale;
     }
 
     /* Estilo para mensagens de erro */
