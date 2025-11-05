@@ -131,3 +131,20 @@ body {
       margin-top: -8px;
       margin-bottom: 5px;
     }
+    .link-voltar {
+      position: center;
+      margin-left: -12px;
+      text-decoration: none;
+      border: 2px solid var(--preto);
+      border-radius: 50%;
+      padding: 5px 12px;
+      color: var(--preto);
+      font-size: x-large;
+      transition: color 2s;
+      transition: border-color 0.3s;
+      }
+
+    .link-voltar:hover {
+      color: var(--cor-2);
+      border-color: var(--cor-2);
+      }

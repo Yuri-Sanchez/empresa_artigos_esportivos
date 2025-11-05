@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato | Sua Loja Esportiva</title>
+  <style>
+    :root {
+      --cor-principal: #581845e1; /* vermelho esportivo */
+      --cor-secundaria: #111;
+      --cor-fundo: #f5f5f5;
+      --cor-texto: #333;
+    }
+
+    body {
+      font-family: "Poppins", Arial, sans-serif;
+      margin: 0;
+      background-color: var(--cor-fundo);
+      color: var(--cor-texto);
+    }
+
+    header {
+      background: var(--cor-principal);
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    /* Seção esquerda: informações de contato */
+    .info-contato {
+      flex: 1 1 320px;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .info-contato h2 {
+      color: var(--cor-principal);
+      margin-top: 0;
+    }
+
+    .info-contato p {
+      line-height: 1.6;
+    }
+
+    .info-contato ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .info-contato li {
+      margin: 0.8rem 0;
+    }
+
+    .info-contato strong {
+      color: var(--cor-secundaria);
+    }
+
+    /* Seção direita: formulário */
+    .formulario-contato {
+      flex: 1 1 400px;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .formulario-contato h2 {
+      color: var(--cor-principal);
+      margin-top: 0;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input, textarea {
+      padding: 0.8rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      resize: none;
+      transition: border-color 0.2s;
+    }
+
+    input:focus, textarea:focus {
+      border-color: var(--cor-principal);
+      outline: none;
+    }
+
+    button {
+      background: var(--cor-principal);
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 600;
+      border: none;
+      padding: 0.8rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    button:hover {
+      background: #58184576;
+    }
+
+    /* Mapa */
+    .mapa {
+      width: 100%;
+      height: 250px;
+      border-radius: 10px;
+      border: none;
+      margin-top: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: var(--cor-secundaria);
+      color: #fff;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        flex-direction: column;
+        align-items: stretch;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Fale Conosco</h1>
+    <p>Entre em contato com a equipe da <strong>Sua Loja Esportiva</strong></p>
+  </header>
+
+  <main>
+    <!-- Informações de contato -->
+    <section class="info-contato">
+      <h2>Informações</h2>
+      <p>Estamos prontos para te ajudar! Entre em contato para tirar dúvidas sobre produtos, pedidos ou parcerias.</p>
+
+      <ul>
+        <li><strong>📞 Telefone:</strong> <a href="tel:+5511999999999">(11) 99999-9999</a></li>
+        <li><strong>💬 WhatsApp:</strong> <a href="https://wa.me/5511999999999" target="_blank">(11) 99999-9999</a></li>
+        <li><strong>✉️ E-mail:</strong> <a href="mailto:contato@sualoja.com.br">contato@sualoja.com.br</a></li>
+        <li><strong>📍 Endereço:</strong> Estr. do Mendanha, 555 · 0800 880 6767</li>
+        <li><strong>🕒 Atendimento:</strong> Seg a Sex - 9h às 18h</li>
+      </ul>
+
+      <iframe 
+        class="mapa"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.7399982163595!2d-46.66232578502205!3d-23.58009018467153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c3ccebe2e1%3A0x9dd2e84b1a7f6b3a!2sAv.%20Paulista%2C%20São%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
+    </section>
+
+    <!-- Formulário -->
+    <section class="formulario-contato">
+      <h2>Envie uma mensagem</h2>
+      <form action="#" method="post">
+        <input type="text" name="nome" placeholder="Seu nome" required>
+        <input type="email" name="email" placeholder="Seu e-mail" required>
+        <input type="tel" name="telefone" placeholder="Seu telefone (opcional)">
+        <textarea name="mensagem" rows="5" placeholder="Digite sua mensagem..." required></textarea>
+        <button type="submit">Enviar mensagem</button>
+      </form>
+    </section>
+  </main>
+  <a href="index.html"link-voltar>voltar</a>
+
+  <footer>
+    &copy; 2025 Sua Loja Esportiva — Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>
