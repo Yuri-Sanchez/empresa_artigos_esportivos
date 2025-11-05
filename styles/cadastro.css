@@ -12,7 +12,7 @@ body {
       padding: 2rem;
       background: var(--branco);
       border-radius: 15px;
-      box-shadow: 0 4px 15px rgba(76, 79, 94, 0.918);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     }
 
     h1 {
@@ -43,7 +43,10 @@ body {
 
     input[type="nome completo"],
     input[type="senha"],
-    input[type="CPF"]{
+    input[type="date"],
+    input[type="CPF"],
+    input[type="CEP"] {
+      margin-bottom: 10px;
       padding: 10px;
       border: 1px solid var(--cor-apoio-2);
       border-radius: 8px;
@@ -55,8 +58,76 @@ body {
 
     input[type="nome completo"]:focus,
     input[type="senha"]:focus,
+    input[type="date"]:focus,
+    input[type="CPF"]:focus,
     input[type="CEP"]:focus {
       border: 1px solid var(--cor-primaria);
-      box-shadow: 0 0 6px rgba(41, 117, 199, 0.4);
+      box-shadow: 0 0 6px var(--cor-1t);
     }
 
+        fieldset {
+      border: 1px solid var(--cor-apoio-2);
+      border-radius: 8px;
+      margin: 10px 0;
+      padding: 10px 15px;
+    }
+
+    legend {
+      font-size: 0.9rem;
+      color: var(--cor-secundaria);
+    }
+
+    .radio-group {
+      margin-bottom: 10px;
+      display: flex;
+      gap: 1rem;
+      margin-top: 8px;
+    }
+    input[type="radio"] {
+      accent-color: var(--cor-1);
+    }
+
+    input[type="submit"] {
+      background: var(--cor-1);
+      color: var(--branco);
+      font-weight: bold;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      padding: 12px;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    input[type="submit"]:hover {
+      background: var(--cor-1);
+      transform: scale(1.03);
+    }
+
+    input[type="submit"]:active {
+      transform: scale(0.95);
+    }
+
+    .link-voltar {
+      display: block;
+      margin-top: 1rem;
+      text-align: center;
+      color: var(--cor-destaque);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.3s;
+    }
+
+    .link-voltar:hover {
+      color: var(--cor-2);
+      text-decoration: underline;
+    }
+
+    /* Mensagens de erro */
+    .erro {
+      position: absolute;
+      font-size: 0.8rem;
+      color: var(--erro);
+      margin-top: -8px;
+      margin-bottom: 5px;
+    }

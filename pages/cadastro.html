@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Titulo</title>
-    <link rel="stylesheet" href="../styles/cadastro.css"/>
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/cadastro.css" />
+    <link rel="shortcut icon" href="../images/logo-icon.png" type="image/x-icon">
   </head>
-  <body id="register">
+  
+<body id="register">
     <main>
         <section>
             <h1>Pagina de Cadastro</h1>
@@ -18,7 +21,7 @@
                 type="nome completo"
                 id="nome completo"
                 name="nome completo"
-                placheolder="Seu nome"
+                placeholder="Digite seu nome completo"
                 required
                 /><br>
                 <span class="erro" id="erro-nome completo"></span>
@@ -30,7 +33,7 @@
                 type="senha"
                 id="senha"
                 name="senha"
-                palceholder="Crie sua senha"
+                placeholder="Digite sua senha"
                 required
                 />
                 <span class="erro" id="erro-senha"></span>
@@ -52,7 +55,8 @@
 	            <form name="cadastro">
 		           <input type="CPF" name="cpf" \
 			         pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \
-			        title="Digite um CPF no formato: xxx.xxx.xxx-xx">
+			        title="Digite um CPF no formato: xxx.xxx.xxx-xx"
+                    placeholder="Digite seu CPF">
 		          <input type="submit" value="Verificar">
 	             </form>
                 </div>
@@ -78,10 +82,10 @@
                 </select> 
                 <br>
                 <br>  
-                <button class="enviar">Enviar</button>
+                <input type="submit" value="Enviar" />
 
             <a href="file:///C:/Users/Pichau/Documents/GitHub/empresa_artigos_esportivos/pages/index.html">
-            <button id="file:///C:/Users/Pichau/Documents/GitHub/empresa_artigos_esportivos/pages/index.html">Voltar</button>
+            <a href="login.html" class="link-voltar">← Voltar</a>
             </form>
             </section>
     </main>
