@@ -38,6 +38,10 @@ header {
   background-color: var(--cor-1);
   height: 40px;
 }
+.b-ul{
+  margin-bottom: 0;
+  padding-left: 0;
+}
 nav {
   height: 100%;
   display: flex;
