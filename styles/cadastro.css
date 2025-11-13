@@ -42,7 +42,7 @@ body {
     }
 
     input[type="nome completo"],
-    input[type="senha"],
+    input[type="password"],
     input[type="date"],
     input[type="CPF"],
     input[type="CEP"] {
@@ -57,7 +57,7 @@ body {
     }
 
     input[type="nome completo"]:focus,
-    input[type="senha"]:focus,
+    input[type="password"]:focus,
     input[type="date"]:focus,
     input[type="CPF"]:focus,
     input[type="CEP"]:focus {
