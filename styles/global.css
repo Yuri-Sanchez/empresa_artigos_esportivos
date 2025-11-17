@@ -3,6 +3,7 @@
 /* dq */
 :root {
   --cor-1: #581845;
+  --cor-1mais: #4b143a;
   --cor-2: #ff5733;
   --cor-1t: #58184576;
   --cor-2t: #ff573376;
@@ -34,10 +35,32 @@ header {
   top: 0;
   position: fixed;
   z-index: 5;
-  width: 100%;
   background-color: var(--cor-1);
+  width: 100%;
   height: 40px;
 }
+.nav2 {
+  left: 0;
+  right: 0;
+  top: 40px;
+  align-content: center;
+  position: fixed;
+  z-index: 5;
+  background-color: var(--cor-1mais);
+  width: 100%;
+  height: 40px;
+}
+.nav2 ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.nav2 a{
+  color: var(--branco);
+  text-decoration: none;
+  padding-left: 20px;
+}
+
 .b-ul{
   margin-bottom: 0;
   padding-left: 0;
