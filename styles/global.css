@@ -28,6 +28,13 @@
   --branco: #fcfcfc;
   --brancobranco: #fff;
   --preto: #000;
+  --cinza-claro: #f2f2f2;
+
+  --accent-start: var(--cor-1);
+  --accent-end: var(--cor-2);
+  --card-shadow: 0 12px 30px rgba(88,24,69,0.08);
+  --muted: #666666;
+  --success: var(--cor-destaque-1);
 }
 * {
   margin: 0;
@@ -207,8 +214,8 @@ nav a {
 
 .carousel-multi {
   position: relative;
-  width: 90%;
-  max-width: 1000px;
+  width: 100%;
+  max-width: 1400px;
   margin: 2rem auto;
   overflow: hidden;
 }
