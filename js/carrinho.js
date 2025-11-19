@@ -1,11 +1,3 @@
-/**
- * cart.js
- * Lógica para adicionar itens, persistir em localStorage,
- * mostrar badge de contagem e manipular a página carrinho.html
- *
- * Atenção: esse arquivo é carregado em index.html e carrinho.html
- */
-
 (function () {
   const STORAGE_KEY = "carrinho_loja";
   const badge = () => document.getElementById("cart-count-badge");
@@ -91,7 +83,6 @@
     });
   }
 
-  // === Handlers para a página index (botões "Adicionar ao Carrinho") ===
   function attachAddButtons() {
     const buttons = document.querySelectorAll(".add-to-cart");
     if (!buttons) return;
@@ -118,9 +109,7 @@
     });
   }
 
-  // === Funções para carrinho.html (render) ===
   function renderCartPage() {
-    // se não estamos na página do carrinho, ignore
     if (!document.getElementById("cart-container")) return;
 
     const cart = readCart();
@@ -210,7 +199,6 @@
       itemsTbody.appendChild(tr);
     });
 
-    // total
     totalEl.textContent = "Total: " + fmt(calcTotal());
 
     // ligar ações de limpar e finalizar
@@ -227,16 +215,15 @@
     const checkoutBtn = document.getElementById("checkout-btn");
     if (checkoutBtn) {
       checkoutBtn.onclick = () => {
-        // Aqui você integraria com checkout real (API / redirect etc.)
-        // Por enquanto mostraremos um resumo simples.
         const total = calcTotal();
         if (total <= 0) {
           alert("Seu carrinho está vazio.");
           return;
         }
         // Simulação: exibir resumo e limpar carrinho
-        if (confirm(`Total da compra: ${fmt(total)}\nDeseja simular finalização?`)) {
-          // simula finalizar e limpa
+        if (
+          confirm(`Total da compra: ${fmt(total)}\nDeseja simular finalização?`)
+        ) {
           clearCart();
           alert("Compra simulada! Obrigado.");
           renderCartPage();
@@ -247,14 +234,13 @@
     updateCartBadge();
   }
 
-  // === Inicialização ===
   document.addEventListener("DOMContentLoaded", () => {
     attachAddButtons();
     updateCartBadge();
     renderCartPage();
   });
 
-  // Expor funções para console dev (opcional)
+  // Expor funções para console dev
   window.__carrinho = {
     readCart,
     saveCart,
