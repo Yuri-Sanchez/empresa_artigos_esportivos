@@ -4,9 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Titulo</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="../styles/global.css" />
-    <link rel="shortcut icon" href="../images/logo-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/carrinho.css" />
+    <link
+      rel="shortcut icon"
+      href="../images/logo-icon.png"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <header>
@@ -17,17 +22,29 @@
             <li><a href="sobre.html">About</a></li>
             <li><a href="contatos.html">Contact</a></li>
           </ul>
-          <a class="login" href="login.html">Login</a>
+
+          <div style="display: flex; align-items: center; gap: 12px">
+            <a class="login" href="login.html">Login</a>
+            <a
+              class="cart-link"
+              href="carrinho.html"
+              title="Ir para o carrinho"
+            >
+              🛒 <span id="cart-count-badge" class="cart-badge">0</span>
+            </a>
+          </div>
         </div>
       </nav>
     </header>
+
     <div class="nav2">
       <ul class="nav2op">
-        <li><a href="#">Masculino</a></li>
+        <li><a href="masculino.html">Masculino</a></li>
         <li><a href="feminino.html">Feminino</a></li>
-        <li><a href="#">Infatil</a></li>
+        <li><a href="infantil.html">Infatil</a></li>
       </ul>
     </div>
+
     <main>
       <section id="ofertas">
         <div>
@@ -57,6 +74,7 @@
           </div>
         </div>
       </section>
+
       <section id="produtos">
         <div>
           <h2 style="text-align: center; margin-bottom: 1rem">
@@ -68,36 +86,95 @@
                 <div class="card">
                   <h3>Produto 1</h3>
                   <p>Descrição breve</p>
+                  <p class="preco">R$ 89,90</p>
+                  <button
+                    class="add-to-cart"
+                    data-id="p1"
+                    data-nome="Produto 1"
+                    data-preco="89.90"
+                  >
+                    Adicionar ao Carrinho
+                  </button>
                 </div>
               </div>
+
               <div class="carousel-multi-slide">
                 <div class="card">
                   <h3>Produto 2</h3>
                   <p>Descrição breve</p>
+                  <p class="preco">R$ 129,50</p>
+                  <button
+                    class="add-to-cart"
+                    data-id="p2"
+                    data-nome="Produto 2"
+                    data-preco="129.50"
+                  >
+                    Adicionar ao Carrinho
+                  </button>
                 </div>
               </div>
+
               <div class="carousel-multi-slide">
                 <div class="card">
                   <h3>Produto 3</h3>
                   <p>Descrição breve</p>
+                  <p class="preco">R$ 59,00</p>
+                  <button
+                    class="add-to-cart"
+                    data-id="p3"
+                    data-nome="Produto 3"
+                    data-preco="59.00"
+                  >
+                    Adicionar ao Carrinho
+                  </button>
                 </div>
               </div>
+
               <div class="carousel-multi-slide">
                 <div class="card">
                   <h3>Produto 4</h3>
                   <p>Descrição breve</p>
+                  <p class="preco">R$ 199,90</p>
+                  <button
+                    class="add-to-cart"
+                    data-id="p4"
+                    data-nome="Produto 4"
+                    data-preco="199.90"
+                  >
+                    Adicionar ao Carrinho
+                  </button>
                 </div>
               </div>
+
               <div class="carousel-multi-slide">
                 <div class="card">
                   <h3>Produto 5</h3>
                   <p>Descrição breve</p>
+                  <p class="preco">R$ 39,90</p>
+                  <button
+                    class="add-to-cart"
+                    data-id="p5"
+                    data-nome="Produto 5"
+                    data-preco="39.90"
+                  >
+                    Adicionar ao Carrinho
+                  </button>
                 </div>
               </div>
+
               <div class="carousel-multi-slide">
                 <div class="card">
                   <h3>Produto 6</h3>
                   <p>Descrição breve</p>
+                  <p class="preco">R$ 249,00</p>
+                  <button
+                    class="add-to-cart"
+                    data-id="p6"
+                    data-nome="Produto 6"
+                    data-preco="249.00"
+                  >
+                    Adicionar ao Carrinho
+                  </button>
                 </div>
               </div>
             </div>
@@ -106,31 +183,51 @@
           </div>
         </div>
       </section>
+
       <section class="amostras">
         <div class="wrap">
           <div class="card">
-            <img src="https://www.planura.mg.leg.br/imagens/teste.jpg/image_preview" alt="">
+            <img
+              src="https://www.planura.mg.leg.br/imagens/teste.jpg/image_preview"
+              alt=""
+            />
           </div>
           <div class="card">
-            <img src="https://www.planura.mg.leg.br/imagens/teste.jpg/image_preview" alt="">
+            <img
+              src="https://www.planura.mg.leg.br/imagens/teste.jpg/image_preview"
+              alt=""
+            />
           </div>
           <div class="card">
-            <img src="https://www.planura.mg.leg.br/imagens/teste.jpg/image_preview" alt="">
+            <img
+              src="https://www.planura.mg.leg.br/imagens/teste.jpg/image_preview"
+              alt=""
+            />
           </div>
           <div class="card">
-            <img src="https://www.planura.mg.leg.br/imagens/teste.jpg/image_preview" alt="">            
+            <img
+              src="https://www.planura.mg.leg.br/imagens/teste.jpg/image_preview"
+              alt=""
+            />
           </div>
           <div class="card">
-            <img src="https://www.planura.mg.leg.br/imagens/teste.jpg/image_preview" alt="">
+            <img
+              src="https://www.planura.mg.leg.br/imagens/teste.jpg/image_preview"
+              alt=""
+            />
           </div>
           <div class="card">
-            <img src="https://www.planura.mg.leg.br/imagens/teste.jpg/image_preview" alt="">
+            <img
+              src="https://www.planura.mg.leg.br/imagens/teste.jpg/image_preview"
+              alt=""
+            />
           </div>
         </div>
       </section>
     </main>
+
     <script src="../js/carousel.js"></script>
     <script src="../js/mcarousel.js"></script>
+    <script src="../js/carrinho.js"></script>
   </body>
 </html>
-<!-- dq -->

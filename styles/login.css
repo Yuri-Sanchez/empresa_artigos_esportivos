@@ -145,4 +145,8 @@ input[type="submit"]:active {
   margin-top: -8px;
   margin-bottom: 5px;
 }
+
+section {
+  margin-top: 0;
+}
 /* dq */

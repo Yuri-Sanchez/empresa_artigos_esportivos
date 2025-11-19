@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>página feminina da centauro</title>
+  <title>Moda Feminina</title>
+
   <link rel="stylesheet" href="../styles/global.css">
   <link rel="stylesheet" href="../styles/feminino.css">
 </head>
@@ -20,44 +21,53 @@
       </div>
     </nav>
   </header>
+
   <div class="nav2">
     <ul class="nav2op">
-      <li><a href="#">Masculino</a></li>
-      <li><a href="#">Feminino</a></li>
-      <li><a href="#">Infatil</a></li>
+      <li><a href="masculino.html">Masculino</a></li>
+      <li><a href="feminino.html" class="ativo">Feminino</a></li>
+      <li><a href="infantil.html">Infantil</a></li>
     </ul>
   </div>
+
   <section class="banner">
-    <img src="c:\Users\rcala\Downloads\Phone Link\banner.jpg.jpg" alt="Coleção Feminina Centauro">
-    <h2>Nova Coleção de Verão</h2>
+    <img src="https://images.unsplash.com/photo-1520975928318-3b0c56c2b4f8" alt="Coleção Feminina">
+    <h2>Nova Coleção Feminina</h2>
   </section>
 
   <section class="produtos">
     <h2>Destaques</h2>
+
     <div class="grade-produtos">
+
       <div class="produto">
-        <img src="imagens/roupa1.jpg" alt="Blusa Feminina Nike">
+        <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b" alt="Blusa Feminina Nike">
         <h3>Blusa Nike</h3>
         <p>R$ 129,90</p>
-        <button>Comprar</button>
+        <button class="add-to-cart" data-id="101" data-nome="Blusa Nike" data-preco="129.90">Adicionar ao Carrinho</button>
       </div>
+
       <div class="produto">
-        <img src="imagens/roupa2.jpg" alt="Shorts Adidas">
+        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab" alt="Shorts Adidas">
         <h3>Shorts Adidas</h3>
         <p>R$ 149,90</p>
-        <button>Comprar</button>
+        <button class="add-to-cart" data-id="102" data-nome="Shorts Adidas" data-preco="149.90">Adicionar ao Carrinho</button>
       </div>
+
       <div class="produto">
-        <img src="imagens/roupa3.jpg" alt="Calça Puma">
+        <img src="https://images.unsplash.com/photo-1503341338985-c0477be52513" alt="Calça Puma">
         <h3>Calça Puma</h3>
         <p>R$ 199,90</p>
-        <button>Comprar</button>
+        <button class="add-to-cart" data-id="103" data-nome="Calça Puma" data-preco="199.90">Adicionar ao Carrinho</button>
       </div>
+
     </div>
   </section>
 
   <footer>
-    <p>© 2025 Centauro Feminina - Todos os direitos reservados.</p>
+    <p>© 2025 Moda Feminina - Todos os direitos reservados.</p>
   </footer>
+
+  <script src="../js/carrinho.js"></script>
 </body>
 </html>
