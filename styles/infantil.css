@@ -1,0 +1,19 @@
+.banner-inf img {
+  border-bottom: 6px solid var(--inf-primaria);
+}
+
+.banner-inf h2 {
+  color: var(--inf-primaria);
+}
+
+.produto {
+  background-color: var(--inf-secundaria);
+}
+
+button.add-to-cart {
+  background-color: var(--inf-primaria);
+}
+
+button.add-to-cart:hover {
+  background-color: #d79b00;
+}

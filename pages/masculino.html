@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moda Masculina</title>
+
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/masculino.css" />
+    <link rel="stylesheet" href="../styles/carrinho.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="header">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contatos.html">Contact</a></li>
+          </ul>
+          <div style="display: flex; align-items: center; gap: 12px">
+            <a class="login" href="login.html">Login</a>
+            <a
+              class="cart-link"
+              href="carrinho.html"
+              title="Ir para o carrinho"
+            >
+              🛒 <span id="cart-count-badge" class="cart-badge">0</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="nav2">
+      <ul class="nav2op">
+        <li><a href="masculino.html" class="ativo">Masculino</a></li>
+        <li><a href="feminino.html">Feminino</a></li>
+        <li><a href="infantil.html">Infantil</a></li>
+      </ul>
+    </div>
+
+    <section class="banner-masc">
+      <img
+        src="#"
+        alt="Moda Masculina"
+      />
+      <h2>Estilo Masculino 2025</h2>
+    </section>
+
+    <section class="produtos">
+      <h2>Destaques</h2>
+
+      <div class="grade-produtos">
+        <div class="produto">
+          <img
+            src="https://www.planura.mg.leg.br/imagens/teste.jpg/image_preview"
+            alt="Camiseta Nike"
+          />
+          <h3>Camiseta Nike</h3>
+          <p>R$ 89,90</p>
+          <button
+            class="add-to-cart"
+            data-id="201"
+            data-nome="Camiseta Nike"
+            data-preco="89.90"
+          >
+            Adicionar ao Carrinho
+          </button>
+        </div>
+
+        <div class="produto">
+          <img
+            src="https://www.planura.mg.leg.br/imagens/teste.jpg/image_preview"
+            alt="Moletom Adidas"
+          />
+          <h3>Moletom Adidas</h3>
+          <p>R$ 199,90</p>
+          <button
+            class="add-to-cart"
+            data-id="202"
+            data-nome="Moletom Adidas"
+            data-preco="199.90"
+          >
+            Adicionar ao Carrinho
+          </button>
+        </div>
+
+        <div class="produto">
+          <img
+            src="https://www.planura.mg.leg.br/imagens/teste.jpg/image_preview"
+            alt="Calça Puma"
+          />
+          <h3>Calça Puma</h3>
+          <p>R$ 159,90</p>
+          <button
+            class="add-to-cart"
+            data-id="203"
+            data-nome="Calça Puma"
+            data-preco="159.90"
+          >
+            Adicionar ao Carrinho
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 Moda Masculina - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="../js/carrinho.js"></script>
+  </body>
+</html>

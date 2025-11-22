@@ -121,7 +121,6 @@ input[type="submit"]:active {
 }
 
 .link-voltar {
-  position: absolute;
   margin-left: -12px;
   text-decoration: none;
   border: 2px solid var(--preto);
@@ -144,5 +143,9 @@ input[type="submit"]:active {
   color: var(--erro);
   margin-top: -8px;
   margin-bottom: 5px;
+}
+
+section {
+  margin-top: 4px;
 }
 /* dq */

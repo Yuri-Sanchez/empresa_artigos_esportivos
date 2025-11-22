@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moda Infantil</title>
+
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/carrinho.css" />
+    <link rel="stylesheet" href="../styles/infantil.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="header">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contatos.html">Contact</a></li>
+          </ul>
+          <div style="display: flex; align-items: center; gap: 12px">
+            <a class="login" href="login.html">Login</a>
+            <a
+              class="cart-link"
+              href="carrinho.html"
+              title="Ir para o carrinho"
+            >
+              🛒 <span id="cart-count-badge" class="cart-badge">0</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="nav2">
+      <ul class="nav2op">
+        <li><a href="masculino.html">Masculino</a></li>
+        <li><a href="feminino.html">Feminino</a></li>
+        <li><a href="infantil.html" class="ativo">Infantil</a></li>
+      </ul>
+    </div>
+
+    <section class="banner-inf">
+      <img
+        src="#"
+        alt="Moda Infantil"
+      />
+      <h2>Moda Infantil Divertida</h2>
+    </section>
+
+    <section class="produtos">
+      <h2>Destaques</h2>
+
+      <div class="grade-produtos">
+        <div class="produto">
+          <img
+            src="https://www.planura.mg.leg.br/imagens/teste.jpg/image_preview"
+            alt="Conjunto Infantil"
+          />
+          <h3>Conjunto Colorido</h3>
+          <p>R$ 89,90</p>
+          <button
+            class="add-to-cart"
+            data-id="301"
+            data-nome="Conjunto Colorido"
+            data-preco="89.90"
+          >
+            Adicionar ao Carrinho
+          </button>
+        </div>
+
+        <div class="produto">
+          <img
+            src="https://www.planura.mg.leg.br/imagens/teste.jpg/image_preview"
+            alt="Vestido Infantil"
+          />
+          <h3>Vestido Estampado</h3>
+          <p>R$ 99,90</p>
+          <button
+            class="add-to-cart"
+            data-id="302"
+            data-nome="Vestido Estampado"
+            data-preco="99.90"
+          >
+            Adicionar ao Carrinho
+          </button>
+        </div>
+
+        <div class="produto">
+          <img
+            src="https://www.planura.mg.leg.br/imagens/teste.jpg/image_preview"
+            alt="Camiseta Infantil"
+          />
+          <h3>Camiseta Divertida</h3>
+          <p>R$ 49,90</p>
+          <button
+            class="add-to-cart"
+            data-id="303"
+            data-nome="Camiseta Divertida"
+            data-preco="49.90"
+          >
+            Adicionar ao Carrinho
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 Moda Infantil - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="../js/carrinho.js"></script>
+  </body>
+</html>

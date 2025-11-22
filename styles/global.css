@@ -4,16 +4,37 @@
 :root {
   --cor-1: #581845;
   --cor-1mais: #4b143a;
+
   --cor-2: #ff5733;
+  
   --cor-1t: #58184576;
   --cor-2t: #ff573376;
+  
+  --fem-primaria: #ff4fa3;
+  --fem-secundaria: #ffb7d9;
+  
+  --masc-primaria: #2b4cff;
+  --masc-secundaria: #a9b8ff;
+  
+  --inf-primaria: #ffb400;
+  --inf-secundaria: #ffe3a8;
+  
   --cor-apoio-1: #f5f5f5;
   --cor-apoio-2: #b0b0b0;
+  
   --cor-destaque-1: #76ff03;
   --cor-destaque-2: #ff6d00;
+  
   --branco: #fcfcfc;
   --brancobranco: #fff;
   --preto: #000;
+  --cinza-claro: #f2f2f2;
+
+  --accent-start: var(--cor-1);
+  --accent-end: var(--cor-2);
+  --card-shadow: 0 12px 30px rgba(88,24,69,0.08);
+  --muted: #666666;
+  --success: var(--cor-destaque-1);
 }
 * {
   margin: 0;
@@ -50,18 +71,18 @@ header {
   width: 100%;
   height: 40px;
 }
-.nav2 ul{
+.nav2 ul {
   list-style: none;
   display: flex;
   justify-content: center;
 }
-.nav2 a{
+.nav2 a {
   color: var(--branco);
   text-decoration: none;
   padding-left: 20px;
 }
 
-.b-ul{
+.b-ul {
   margin-bottom: 0;
   padding-left: 0;
 }
@@ -193,8 +214,8 @@ nav a {
 
 .carousel-multi {
   position: relative;
-  width: 90%;
-  max-width: 1000px;
+  width: 100%;
+  max-width: 1400px;
   margin: 2rem auto;
   overflow: hidden;
 }
@@ -239,9 +260,66 @@ nav a {
   right: -16px;
 }
 
- h2 {
-      text-align: center;
-      margin-bottom: 1rem;
-      color: var(--cor-primaria);
-    }
+h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--cor-primaria);
+}
 
+section {
+  margin-top: 90px;
+}
+
+.grade-produtos {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
+.produto {
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.15);
+}
+
+.produto img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+button.add-to-cart {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+
+.banner-masc,
+.banner-inf {
+  position: relative;
+  margin-top: 80px;
+}
+
+.banner-masc img,
+.banner-inf img {
+  width: 100%;
+  max-height: 260px;
+  object-fit: cover;
+}
+
+.banner-masc h2,
+.banner-inf h2 {
+  text-align: center;
+  padding: 15px;
+  font-size: 1.8rem;
+}
