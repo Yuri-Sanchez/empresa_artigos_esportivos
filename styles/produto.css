@@ -1,0 +1,95 @@
+/* Container principal */
+.produto-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  display: flex;
+  gap: 40px;
+  padding: 20px;
+}
+
+/* Imagem principal */
+.produto-galeria {
+  flex: 1;
+}
+
+.produto-imagem {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 10px;
+  cursor: zoom-in;
+  transition: transform 0.2s ease;
+}
+
+.produto-imagem:hover {
+  transform: scale(1.12);
+}
+
+/* Informações do produto */
+.produto-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.produto-info h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.produto-preco {
+  font-size: 26px;
+  color: #2f7d32;
+  font-weight: bold;
+}
+
+.produto-avaliacao {
+  font-size: 18px;
+  color: #f7b500;
+}
+
+/* Tamanhos */
+.produto-tamanho label {
+  font-size: 18px;
+}
+
+.produto-tamanho select {
+  padding: 8px;
+  font-size: 16px;
+  margin-top: 5px;
+  border-radius: 6px;
+}
+
+/* Botão de adicionar ao carrinho */
+.btn-add-carrinho {
+  padding: 14px;
+  background: #111;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-add-carrinho:hover {
+  background: #333;
+}
+
+/* Descrição */
+.descricao-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.descricao-container h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.descricao-container p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}

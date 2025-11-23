@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produto</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/carrinho.css" />
+    <link rel="stylesheet" href="../styles/produto.css" />
+    <link
+      rel="shortcut icon"
+      href="../images/logo-icon.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="header">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contatos.html">Contato</a></li>
+          </ul>
+          <div style="display: flex; align-items: center; gap: 12px">
+            <a class="login" href="login.html">Login</a>
+            <a
+              class="cart-link"
+              href="carrinho.html"
+              title="Ir para o carrinho"
+            >
+              🛒 <span id="cart-count-badge" class="cart-badge">0</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="nav2">
+      <ul class="nav2op">
+        <li><a href="masculino.html">Masculino</a></li>
+        <li><a href="feminino.html">Feminino</a></li>
+        <li><a href="infantil.html">Infatil</a></li>
+      </ul>
+    </div>
+
+    <section class="produto-container">
+      <div class="produto-galeria">
+        <img id="produto-img" class="produto-imagem" src="" alt="Produto" />
+      </div>
+
+      <div class="produto-info">
+        <h1 id="produto-nome">Nome do Produto</h1>
+
+        <p id="produto-preco" class="produto-preco">R$ 0,00</p>
+
+        <div class="produto-avaliacao">
+          ⭐⭐⭐⭐⭐ <span>(0 avaliações)</span>
+        </div>
+
+        <div class="produto-tamanho">
+          <label for="tamanho">Tamanho:</label>
+          <select id="tamanho">
+            <option value="">Selecione</option>
+          </select>
+        </div>
+
+        <button class="btn-add-carrinho">Adicionar ao carrinho</button>
+      </div>
+    </section>
+
+    <section class="descricao-container">
+      <h2>Descrição do Produto</h2>
+      <p id="produto-descricao">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        vitae fermentum nisl. Vestibulum id turpis in urna tempor placerat.
+      </p>
+    </section>
+
+    <script src="../js/produto.js"></script>
+  </body>
+</html>
+<!-- dq -->

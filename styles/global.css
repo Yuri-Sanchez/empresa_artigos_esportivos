@@ -34,6 +34,10 @@
   --accent-end: var(--cor-2);
   --card-shadow: 0 12px 30px rgba(88,24,69,0.08);
   --muted: #666666;
+  --cinza-medio: #d9d9d9;
+  --cinza-escuro: #777;
+  --verde-compra: #3ebd4d;
+  
   --success: var(--cor-destaque-1);
 }
 * {
