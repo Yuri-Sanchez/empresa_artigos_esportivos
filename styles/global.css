@@ -6,35 +6,32 @@
   --cor-1mais: #4b143a;
 
   --cor-2: #ff5733;
-  
+
   --cor-1t: #58184576;
   --cor-2t: #ff573376;
-  
+
   --fem-primaria: #ff4fa3;
   --fem-secundaria: #ffb7d9;
-  
+
   --masc-primaria: #2b4cff;
   --masc-secundaria: #a9b8ff;
-  
+
   --inf-primaria: #ffb400;
   --inf-secundaria: #ffe3a8;
-  
+
   --cor-apoio-1: #f5f5f5;
   --cor-apoio-2: #b0b0b0;
-  
+
   --cor-destaque-1: #76ff03;
   --cor-destaque-2: #ff6d00;
-  
+
   --branco: #fcfcfc;
   --brancobranco: #fff;
   --preto: #000;
   --cinza-claro: #f2f2f2;
 
-  --accent-start: var(--cor-1);
-  --accent-end: var(--cor-2);
-  --card-shadow: 0 12px 30px rgba(88,24,69,0.08);
+  --card-shadow: 0 12px 30px rgba(88, 24, 69, 0.08);
   --muted: #666666;
-  --success: var(--cor-destaque-1);
 }
 * {
   margin: 0;
@@ -63,12 +60,45 @@ header {
 }
 
 .busca {
-  border: 1px solid #000;
-  border-radius: 100px;
-  padding-top: 4px;
-  padding-bottom: 0px;
-  padding-right: 150px;
-  align-self: center;
+  position: relative;
+}
+
+input {
+  margin: 0 0 8px 8px;
+  width: 100%;
+  padding: 8px 10px 8px 34px; /* espaço para a lupa */
+  border-radius: 8px;
+  border: 1px solid var(--preto);
+  font-size: 15px;
+  outline: none;
+  color: var(--preto);
+  background-color: transparent;
+  background-image: url("../images/icone_busca.png");
+  background-repeat: no-repeat;
+  background-size: 18px;
+  background-position: 10px center; 
+  transition: 0.3s ease;
+}
+input:focus {
+  color: var(--cor-apoio-2);
+  border-color: var(--cor-apoio-2);
+  background-image: url(../images/icone_busca_cinza.png);
+}
+input:before {
+  content: "🔍";
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  opacity: 0.7;
+}
+input::placeholder {
+  color: var(--preto);
+  transition: 0.3s ease;
+}
+input:focus::placeholder {
+  color: var(--cor-apoio-2);
 }
 
 .nav2 {
@@ -315,7 +345,6 @@ button.add-to-cart {
   font-size: 15px;
   font-weight: bold;
 }
-
 
 .banner-masc,
 .banner-inf {
