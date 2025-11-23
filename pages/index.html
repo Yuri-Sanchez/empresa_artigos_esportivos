@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Titulo</title>
+    <title>Home</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="../styles/global.css" />
     <link rel="stylesheet" href="../styles/carrinho.css" />
@@ -18,17 +18,28 @@
       <nav>
         <div class="header">
           <ul>
+            <li>
+              <a href="index.html"
+                ><img src="../images/logo_home_48x44.png" alt="Home"
+              /></a>
+            </li>
+
+            <div class="busca">
+              <label for="busca"></label>
+              <input
+                type="text"
+                id="busca"
+                name="barra de busca"
+                placeholder="Procurar"
+              >
+            </div>
             <li><a href="index.html">Home</a></li>
             <li><a href="sobre.html">Sobre</a></li>
             <li><a href="contatos.html">Contato</a></li>
           </ul>
           <div style="display: flex; align-items: center; gap: 12px">
             <a class="login" href="login.html">Login</a>
-            <a
-              class="cart-link"
-              href="carrinho.html"
-              title="Ir para o carrinho"
-            >
+            <a class="cart-link" href="carrinho.html" title="Carrinho">
               🛒 <span id="cart-count-badge" class="cart-badge">0</span>
             </a>
           </div>
@@ -41,6 +52,8 @@
         <li><a href="masculino.html">Masculino</a></li>
         <li><a href="feminino.html">Feminino</a></li>
         <li><a href="infantil.html">Infatil</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contatos.html">Contate-nos</a></li>
       </ul>
     </div>
 
