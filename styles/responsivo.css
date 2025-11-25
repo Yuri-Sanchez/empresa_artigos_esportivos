@@ -212,15 +212,15 @@ section,
   border-radius: 6px;
 }
 
-body > main,
+/* body > main,
 body > section,
 body > #ofertas,
 body > #produtos {
-  padding-top: 110px;
-}
+  padding-top: 110px; 
+} */
 
-@supports (padding-top: 110px) {
-}
+/* @supports (padding-top: 110px) {
+} */
 
 .grade-produtos {
   display: grid;
