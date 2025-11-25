@@ -79,11 +79,11 @@ section,
 /* 2 Cards */
 @media (max-width: 900px) {
   .carousel-multi {
-    max-width: 900px;
+    max-width: 80%;
   }
-  .carousel-multi-track {
+  /* .carousel-multi-track {
     gap: 12px;
-  }
+  } */
   .carousel-multi-slide {
     min-width: 50%;
   }
@@ -92,10 +92,6 @@ section,
   }
   .carousel-multi-slide .card img {
     height: 180px;
-  }
-  .busca {
-    width: 45vw;
-    min-width: 180px;
   }
 
   .header {
@@ -107,17 +103,34 @@ section,
     gap: 8px;
   }
 }
+@media (max-width: 750px) {
+  .carousel-multi {
+    max-width: 65%;
+  }
+}
+
 /* 1 Card */
 @media (max-width: 600px) {
   .carousel-multi {
-    max-width: 100%;
+    max-width: 50%;
     margin: 1rem auto;
+    padding: 0 26px;
   }
-  .carousel-multi-track {
+  /* .carousel-multi-track {
     gap: 10px;
-  }
+  } */
   .carousel-multi-slide {
     min-width: 100%;
+  }
+  .carousel-multi-btn {
+    font-size: 1.6rem;
+    padding: 6px 10px;
+  }
+  .multi-prev {
+    left: 4px;
+  }
+  .multi-next {
+    right: 4px;
   }
 
   .header {
@@ -295,11 +308,14 @@ body > #produtos {
   nav li {
     margin-left: 0;
   }
+  .nav2 {
+    height: 66px;
+  }
   .login {
     margin-right: 0;
   }
   .header {
-    gap: 2px
+    gap: 2px;
   }
 }
 
