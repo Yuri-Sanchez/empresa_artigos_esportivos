@@ -2,29 +2,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap");
 /* dq */
 :root {
-  --cor-1: #581845;
+  --cor-1: #5c1d49;
   --cor-1mais: #4b143a;
 
   --cor-2: #ff5733;
-  
+
   --cor-1t: #58184576;
   --cor-2t: #ff573376;
-  
+
   --fem-primaria: #ff4fa3;
   --fem-secundaria: #ffb7d9;
-  
+
   --masc-primaria: #2b4cff;
   --masc-secundaria: #a9b8ff;
-  
+
   --inf-primaria: #ffb400;
   --inf-secundaria: #ffe3a8;
-  
+
   --cor-apoio-1: #f5f5f5;
   --cor-apoio-2: #b0b0b0;
-  
+
   --cor-destaque-1: #76ff03;
   --cor-destaque-2: #ff6d00;
-  
+
   --branco: #fcfcfc;
   --brancobranco: #fff;
   --preto: #000;
@@ -32,7 +32,7 @@
 
   --accent-start: var(--cor-1);
   --accent-end: var(--cor-2);
-  --card-shadow: 0 12px 30px rgba(88,24,69,0.08);
+  --card-shadow: 0 12px 30px rgba(88, 24, 69, 0.08);
   --muted: #666666;
   --cinza-medio: #d9d9d9;
   --cinza-escuro: #777;
@@ -68,8 +68,9 @@ header {
 
 .busca {
   position: relative;
+  transition: 0.2s ease;
 }
-input {
+input#busca {
   margin: 0 0 8px 8px;
   width: 100%;
   padding: 8px 10px 8px 34px; /* espaço para a lupa */
@@ -82,15 +83,15 @@ input {
   background-image: url("../images/icone_busca.png");
   background-repeat: no-repeat;
   background-size: 18px;
-  background-position: 10px center; 
+  background-position: 10px center;
   transition: 0.3s ease;
 }
-input:focus {
+input#busca:focus {
   color: var(--cor-apoio-2);
   border-color: var(--cor-apoio-2);
   background-image: url(../images/icone_busca_cinza.png);
 }
-input:before {
+input#busca:before {
   content: "🔍";
   position: absolute;
   left: 12px;
@@ -99,11 +100,11 @@ input:before {
   font-size: 16px;
   opacity: 0.7;
 }
-input::placeholder {
+input#busca::placeholder {
   color: var(--preto);
   transition: 0.3s ease;
 }
-input:focus::placeholder {
+input#busca:focus::placeholder {
   color: var(--cor-apoio-2);
 }
 
@@ -350,7 +351,6 @@ button.add-to-cart {
   font-size: 15px;
   font-weight: bold;
 }
-
 
 .banner-masc,
 .banner-inf {

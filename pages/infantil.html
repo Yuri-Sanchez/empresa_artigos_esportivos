@@ -6,25 +6,39 @@
     <title>Moda Infantil</title>
 
     <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/responsivo.css">
     <link rel="stylesheet" href="../styles/carrinho.css" />
-    <link rel="stylesheet" href="../styles/infantil.css" />
+    <link rel="stylesheet" href="../styles/sessao.css" />
+    <link
+      rel="shortcut icon"
+      href="../images/logo_home_48x44.png"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <header>
       <nav>
         <div class="header">
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="contatos.html">Contato</a></li>
+            <li>
+              <a href="index.html"
+                ><img src="../images/logo_home_48x44.png" alt="Home"
+              /></a>
+            </li>
+
+            <div class="busca">
+              <label for="busca"></label>
+              <input
+                type="text"
+                id="busca"
+                name="barra de busca"
+                placeholder="Procurar"
+              >
+            </div>
           </ul>
           <div style="display: flex; align-items: center; gap: 12px">
             <a class="login" href="login.html">Login</a>
-            <a
-              class="cart-link"
-              href="carrinho.html"
-              title="Ir para o carrinho"
-            >
+            <a class="cart-link" href="carrinho.html" title="Carrinho">
               🛒 <span id="cart-count-badge" class="cart-badge">0</span>
             </a>
           </div>
@@ -36,7 +50,9 @@
       <ul class="nav2op">
         <li><a href="masculino.html">Masculino</a></li>
         <li><a href="feminino.html">Feminino</a></li>
-        <li><a href="infantil.html" class="ativo">Infantil</a></li>
+        <li><a href="infantil.html">Infatil</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contatos.html">Contate-nos</a></li>
       </ul>
     </div>
 
@@ -52,15 +68,15 @@
       <h2>Destaques</h2>
 
       <div class="grade-produtos">
-        <div class="produto">
+        <div class="produto inf">
           <img
-            src="https://www.planura.mg.leg.br/imagens/teste.jpg/image_preview"
-            alt="Conjunto Infantil"
+            src="../images/conj_calca_moletom_inf.png"
+            alt="Calça e Moletom Infantil"
           />
-          <h3>Conjunto Colorido</h3>
+          <h3>Conjunto Calça e Moletom</h3>
           <p>R$ 89,90</p>
           <button
-            class="add-to-cart"
+            class="add-to-cart inf"
             data-id="301"
             data-nome="Conjunto Colorido"
             data-preco="89.90"
@@ -69,15 +85,15 @@
           </button>
         </div>
 
-        <div class="produto">
+        <div class="produto inf">
           <img
-            src="https://www.planura.mg.leg.br/imagens/teste.jpg/image_preview"
-            alt="Vestido Infantil"
+            src="../images/kimono_inf.png"
+            alt="Kimono Infantil"
           />
-          <h3>Vestido Estampado</h3>
+          <h3>Kimono</h3>
           <p>R$ 99,90</p>
           <button
-            class="add-to-cart"
+            class="add-to-cart inf"
             data-id="302"
             data-nome="Vestido Estampado"
             data-preco="99.90"
@@ -86,15 +102,15 @@
           </button>
         </div>
 
-        <div class="produto">
+        <div class="produto inf">
           <img
-            src="https://www.planura.mg.leg.br/imagens/teste.jpg/image_preview"
-            alt="Camiseta Infantil"
+            src="../images/tenis_nike_inf.png"
+            alt="Tenis Nike infantil"
           />
-          <h3>Camiseta Divertida</h3>
+          <h3>Tenis Nike infantil</h3>
           <p>R$ 49,90</p>
           <button
-            class="add-to-cart"
+            class="add-to-cart inf"
             data-id="303"
             data-nome="Camiseta Divertida"
             data-preco="49.90"

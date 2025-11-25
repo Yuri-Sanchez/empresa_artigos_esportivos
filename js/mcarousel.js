@@ -4,42 +4,57 @@ const nextMulti = document.querySelector(".multi-next");
 const prevMulti = document.querySelector(".multi-prev");
 
 let multiIndex = 0;
-const visibleSlides = 3;
 let multiInterval;
 
-function updateMultiPosition() {
-  multiTrack.style.transform = `translateX(-${
-    multiIndex * (100 / visibleSlides)
-  }%)`;
+function getVisibleSlides() {
+  const slideWidth = multiSlides[0].getBoundingClientRect().width;
+  const trackWidth = multiTrack.parentElement.getBoundingClientRect().width;
+
+  const count = Math.floor(trackWidth / slideWidth);
+  return Math.max(count, 1); // sempre ao menos 1
 }
 
-// Navegação manual
+function updateMultiPosition() {
+  const visible = getVisibleSlides();
+  const maxIndex = multiSlides.length - visible;
+
+  if (multiIndex > maxIndex) multiIndex = 0;
+  if (multiIndex < 0) multiIndex = maxIndex;
+
+  const movePercent = (100 / visible) * multiIndex;
+  multiTrack.style.transform = `translateX(-${movePercent}%)`;
+}
+
+/* Manual */
 nextMulti.addEventListener("click", () => {
-  if (multiIndex < multiSlides.length - visibleSlides) {
-    multiIndex++;
-  } else {
-    multiIndex = 0; // Reinicia
-  }
+  const visible = getVisibleSlides();
+  const maxIndex = multiSlides.length - visible;
+
+  if (multiIndex < maxIndex) multiIndex++;
+  else multiIndex = 0;
+
   updateMultiPosition();
 });
 
 prevMulti.addEventListener("click", () => {
-  if (multiIndex > 0) {
-    multiIndex--;
-  } else {
-    multiIndex = multiSlides.length - visibleSlides;
-  }
+  const visible = getVisibleSlides();
+  const maxIndex = multiSlides.length - visible;
+
+  if (multiIndex > 0) multiIndex--;
+  else multiIndex = maxIndex;
+
   updateMultiPosition();
 });
 
-// Funções de autoplay
+/* Autoplay */
 function startMultiAutoPlay() {
   multiInterval = setInterval(() => {
-    if (multiIndex < multiSlides.length - visibleSlides) {
-      multiIndex++;
-    } else {
-      multiIndex = 0;
-    }
+    const visible = getVisibleSlides();
+    const maxIndex = multiSlides.length - visible;
+
+    if (multiIndex < maxIndex) multiIndex++;
+    else multiIndex = 0;
+
     updateMultiPosition();
   }, 3500);
 }
@@ -48,9 +63,12 @@ function stopMultiAutoPlay() {
   clearInterval(multiInterval);
 }
 
-// Inicia autoplay
-startMultiAutoPlay();
-
-// Pausa no hover e retoma ao sair
 multiTrack.addEventListener("mouseenter", stopMultiAutoPlay);
 multiTrack.addEventListener("mouseleave", startMultiAutoPlay);
+
+window.addEventListener("resize", () => {
+  updateMultiPosition();
+});
+
+updateMultiPosition();
+startMultiAutoPlay();

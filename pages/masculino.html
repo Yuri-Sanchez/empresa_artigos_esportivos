@@ -6,25 +6,39 @@
     <title>Moda Masculina</title>
 
     <link rel="stylesheet" href="../styles/global.css" />
-    <link rel="stylesheet" href="../styles/masculino.css" />
+    <link rel="stylesheet" href="../styles/responsivo.css">
     <link rel="stylesheet" href="../styles/carrinho.css" />
+    <link rel="stylesheet" href="../styles/sessao.css" />
+    <link
+      rel="shortcut icon"
+      href="../images/logo_home_48x44.png"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <header>
       <nav>
         <div class="header">
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="contatos.html">Contato</a></li>
+            <li>
+              <a href="index.html"
+                ><img src="../images/logo_home_48x44.png" alt="Home"
+              /></a>
+            </li>
+
+            <div class="busca">
+              <label for="busca"></label>
+              <input
+                type="text"
+                id="busca"
+                name="barra de busca"
+                placeholder="Procurar"
+              >
+            </div>
           </ul>
           <div style="display: flex; align-items: center; gap: 12px">
             <a class="login" href="login.html">Login</a>
-            <a
-              class="cart-link"
-              href="carrinho.html"
-              title="Ir para o carrinho"
-            >
+            <a class="cart-link" href="carrinho.html" title="Carrinho">
               🛒 <span id="cart-count-badge" class="cart-badge">0</span>
             </a>
           </div>
@@ -34,9 +48,11 @@
 
     <div class="nav2">
       <ul class="nav2op">
-        <li><a href="masculino.html" class="ativo">Masculino</a></li>
+        <li><a href="masculino.html">Masculino</a></li>
         <li><a href="feminino.html">Feminino</a></li>
-        <li><a href="infantil.html">Infantil</a></li>
+        <li><a href="infantil.html">Infatil</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contatos.html">Contate-nos</a></li>
       </ul>
     </div>
 
@@ -54,7 +70,7 @@
       <div class="grade-produtos">
         <div class="produto">
           <img
-            src="https://www.planura.mg.leg.br/imagens/teste.jpg/image_preview"
+            src="../images/regata_nike_masc.png"
             alt="Camiseta Nike"
           />
           <h3>Camiseta Nike</h3>
@@ -71,7 +87,7 @@
 
         <div class="produto">
           <img
-            src="https://www.planura.mg.leg.br/imagens/teste.jpg/image_preview"
+            src="../images/moletom_adidas_masc.png"
             alt="Moletom Adidas"
           />
           <h3>Moletom Adidas</h3>
@@ -88,10 +104,10 @@
 
         <div class="produto">
           <img
-            src="https://www.planura.mg.leg.br/imagens/teste.jpg/image_preview"
-            alt="Calça Puma"
+            src="../images/luva_box_naja.png"
+            alt="Luva de Box Naja"
           />
-          <h3>Calça Puma</h3>
+          <h3>Luva de Box Naja</h3>
           <p>R$ 159,90</p>
           <button
             class="add-to-cart"

@@ -6,25 +6,40 @@
     <title>Moda Feminina</title>
 
     <link rel="stylesheet" href="../styles/global.css" />
-    <link rel="stylesheet" href="../styles/feminino.css" />
+    <link rel="stylesheet" href="../styles/responsivo.css">
     <link rel="stylesheet" href="../styles/carrinho.css" />
+    <link rel="stylesheet" href="../styles/sessao.css" />
+    <link
+      rel="shortcut icon"
+      href="../images/logo_home_48x44.png"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <header>
       <nav>
         <div class="header">
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="contatos.html">Contato</a></li>
+            <li>
+              <a href="index.html">
+                <img src="../images/logo_home_48x44.png" alt="Home" />
+              </a>
+            </li>
+
+            <div class="busca">
+              <label for="busca"></label>
+              <input
+                type="text"
+                id="busca"
+                name="barra de busca"
+                placeholder="Procurar"
+              >
+            </div>
           </ul>
+
           <div style="display: flex; align-items: center; gap: 12px">
             <a class="login" href="login.html">Login</a>
-            <a
-              class="cart-link"
-              href="carrinho.html"
-              title="Ir para o carrinho"
-            >
+            <a class="cart-link" href="carrinho.html" title="Carrinho">
               🛒 <span id="cart-count-badge" class="cart-badge">0</span>
             </a>
           </div>
@@ -35,73 +50,77 @@
     <div class="nav2">
       <ul class="nav2op">
         <li><a href="masculino.html">Masculino</a></li>
-        <li><a href="feminino.html" class="ativo">Feminino</a></li>
+        <li><a href="feminino.html">Feminino</a></li>
         <li><a href="infantil.html">Infantil</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contatos.html">Contate-nos</a></li>
       </ul>
     </div>
 
-    <section class="banner">
+    <section class="banner-fem">
       <img
         src="#"
-        alt="Coleção Feminina"
+        alt="Moda Feminina"
       />
-      <h2>Nova Coleção Feminina</h2>
+      <h2>Moda Feminina 2025</h2>
     </section>
 
     <section class="produtos">
       <h2>Destaques</h2>
 
       <div class="grade-produtos">
-        <div class="produto">
+
+        <div class="produto fem">
           <img
-            src="https://www.planura.mg.leg.br/imagens/teste.jpg/image_preview"
-            alt="Blusa Feminina Nike"
+            src="../images/blusa_nike_fem.png"
+            alt="Blusa da Nike"
           />
           <h3>Blusa Nike</h3>
           <p>R$ 129,90</p>
           <button
-            class="add-to-cart"
-            data-id="101"
-            data-nome="Blusa Nike"
+            class="add-to-cart fem"
+            data-id="401"
+            data-nome="Vestido Floral"
             data-preco="129.90"
           >
             Adicionar ao Carrinho
           </button>
         </div>
 
-        <div class="produto">
+        <div class="produto fem">
           <img
-            src="https://www.planura.mg.leg.br/imagens/teste.jpg/image_preview"
-            alt="Shorts Adidas"
+            src="../images/short_adidas.png"
+            alt="Short Adidas"
           />
-          <h3>Shorts Adidas</h3>
+          <h3>Short Adidas</h3>
           <p>R$ 149,90</p>
           <button
-            class="add-to-cart"
-            data-id="102"
-            data-nome="Shorts Adidas"
+            class="add-to-cart fem"
+            data-id="402"
+            data-nome="Moletom Feminino"
             data-preco="149.90"
           >
             Adicionar ao Carrinho
           </button>
         </div>
 
-        <div class="produto">
+        <div class="produto fem">
           <img
-            src="https://www.planura.mg.leg.br/imagens/teste.jpg/image_preview"
+            src="../images/calca_puma.png"
             alt="Calça Puma"
           />
           <h3>Calça Puma</h3>
           <p>R$ 199,90</p>
           <button
-            class="add-to-cart"
-            data-id="103"
-            data-nome="Calça Puma"
+            class="add-to-cart fem"
+            data-id="403"
+            data-nome="Tênis Nike Feminino"
             data-preco="199.90"
           >
             Adicionar ao Carrinho
           </button>
         </div>
+
       </div>
     </section>
 
