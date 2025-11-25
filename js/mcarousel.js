@@ -72,3 +72,11 @@ window.addEventListener("resize", () => {
 
 updateMultiPosition();
 startMultiAutoPlay();
+
+// Pausa no hover ou ao toque no celular
+
+carouselMulti.addEventListener("mouseenter", stopAutoPlay);
+carouselMulti.addEventListener("mouseleave", startAutoPlay);
+
+carouselMulti.addEventListener("touchstart", stopAutoPlay);
+carouselMulti.addEventListener("touchend", startAutoPlay);
