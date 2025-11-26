@@ -38,7 +38,7 @@
   --cinza-escuro: #777;
   --verde-compra: #3ebd4d;
 
-  --success: var(--cor-destaque-1);
+  --produto-shadow: var(--card-shadow, 0 12px 30px rgba(88, 24, 69, 0.08));
 }
 * {
   margin: 0;
@@ -106,6 +106,20 @@ input#busca::placeholder {
 }
 input#busca:focus::placeholder {
   color: var(--cor-apoio-2);
+}
+
+.cart-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  position: relative;
+  text-decoration: none;
+}
+
+.icon-cart {
+  width: 28px;
+  height: 28px;
+  fill: currentColor;
 }
 
 .nav2 {
@@ -292,8 +306,8 @@ nav a {
 }
 
 .carousel-multi-slide .card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
 }
 
 .carousel-multi-btn {

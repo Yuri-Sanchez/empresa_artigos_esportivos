@@ -1,11 +1,6 @@
 /* --------------------------------------------- */
 /*                   MASCULINO                   */
 /* --------------------------------------------- */
-
-.banner-masc img {
-  border-bottom: 6px solid var(--masc-primaria);
-}
-
 .banner-masc h2 {
   color: var(--masc-primaria);
 }
@@ -26,10 +21,6 @@ button.add-to-cart:hover {
 /*                    INFANTIL                   */
 /* --------------------------------------------- */
 
-.banner-inf img {
-  border-bottom: 6px solid var(--inf-primaria);
-}
-
 .banner-inf h2 {
   color: var(--inf-primaria);
 }
@@ -49,10 +40,6 @@ button.add-to-cart.inf:hover {
 /* --------------------------------------------- */
 /*                   FEMININO                    */
 /* --------------------------------------------- */
-
-.banner-fem img {
-  border-bottom: 6px solid var(--fem-primaria);
-}
 
 .banner-fem h2 {
   color: var(--fem-primaria);
