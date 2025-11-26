@@ -78,6 +78,10 @@ section,
 }
 /* 2 Cards */
 @media (max-width: 900px) {
+  .carousel-slide img {
+    height: 260px;
+    object-fit: contain;
+  }
   .carousel-multi {
     max-width: 80%;
   }
@@ -111,6 +115,10 @@ section,
 
 /* 1 Card */
 @media (max-width: 600px) {
+  .carousel-slide img {
+    height: 220px;
+    object-fit: contain;
+  }
   .carousel-multi {
     max-width: 50%;
     margin: 1rem auto;
