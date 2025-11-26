@@ -447,3 +447,36 @@ button.add-to-cart {
   padding: 15px;
   font-size: 1.8rem;
 }
+
+/* Cadastro/Login */
+.btn-voltar {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 18px;
+  
+  background: #ffffff;
+  color: var(--cor-1);
+  border: 2px solid var(--cor-1);
+  border-radius: 8px;
+
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+
+  transition: 
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.15s ease;
+}
+
+.btn-voltar:hover {
+  background: var(--cor-1);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.btn-voltar:active {
+  transform: translateY(1px) scale(0.97);
+  background: var(--cor-1mais);
+  border-color: var(--cor-1mais);
+}
