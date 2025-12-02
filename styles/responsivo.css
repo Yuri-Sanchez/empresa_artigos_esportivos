@@ -210,7 +210,7 @@ section,
 }
 
 .card img {
-  background-color: #f2f2f2; /* placeholder background while loads */
+  background-color: #f2f2f2; /* placeholder */
 }
 
 .thumb {
@@ -220,15 +220,6 @@ section,
   border-radius: 6px;
 }
 
-/* body > main,
-body > section,
-body > #ofertas,
-body > #produtos {
-  padding-top: 110px; 
-} */
-
-/* @supports (padding-top: 110px) {
-} */
 
 .grade-produtos {
   display: grid;

@@ -123,7 +123,6 @@ input[type="submit"]:active {
   text-decoration: underline;
 }
 
-/* Mensagens de erro */
 .erro {
   position: absolute;
   font-size: 0.8rem;

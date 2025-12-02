@@ -103,9 +103,6 @@
 .stars button.active svg,
 .stars button:hover svg { fill: var(--cor-2); }
 
-/* REMOVIDO bloco de tamanhos */
-
-/* botões */
 .acoes .btn-add {
   margin-top: 8px;
   padding:12px 16px;
@@ -118,12 +115,15 @@
 }
 
 .comentario textarea {
-  width:100%;
-  min-height:70px;
-  padding:8px;
-  border-radius:8px;
-  border:1px solid var(--cinza-medio);
+  width: 100%;
+  height: 90px;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid var(--cinza-medio);
+  resize: none;
+  overflow-y: auto;
 }
+
 
 .btn-ghost {
   margin-top:8px;

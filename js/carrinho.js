@@ -65,7 +65,7 @@
     return total;
   }
 
-  // atualiza badge de contagem exibindo soma das quantidades
+  // atualiza a contagem exibindo soma das qtds
   function updateCartBadge() {
     const b = badge();
     if (!b) return;
@@ -75,7 +75,7 @@
     b.textContent = count;
   }
 
-  // -> Função para formatação de preços
+  // função para formatação de preços
   function fmt(valor) {
     return Number(valor).toLocaleString("pt-BR", {
       style: "currency",
@@ -220,7 +220,7 @@
           alert("Seu carrinho está vazio.");
           return;
         }
-        // Simulação: exibir resumo e limpar carrinho
+        // simulação
         if (
           confirm(`Total da compra: ${fmt(total)}\nDeseja simular finalização?`)
         ) {
@@ -240,7 +240,7 @@
     renderCartPage();
   });
 
-  // Expor funções para console dev
+  // expor funções para console dev
   window.__carrinho = {
     readCart,
     saveCart,

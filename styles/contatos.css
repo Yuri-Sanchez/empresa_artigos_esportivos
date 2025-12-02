@@ -10,14 +10,12 @@
   --muted: #666666;
 }
 
-/* BODY */
 body {
   background: var(--cor-apoio-1);
   color: var(--preto);
   font-family: Arial, sans-serif;
 }
 
-/* HEADER */
 .header-contato {
   background: var(--cor-1);
   color: var(--branco);
@@ -63,19 +61,16 @@ body {
   color: var(--cor-1);
 }
 
-/* TEXTO */
 .info-item strong {
   color: var(--cor-1);
 }
 
-/* MAPA */
 iframe {
   width: 100%;
   border: 0;
   border-radius: 14px;
 }
 
-/* RESPONSIVIDADE */
 @media (max-width: 576px) {
   .btn-voltar {
     padding: 6px 12px;

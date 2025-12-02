@@ -122,7 +122,6 @@
     },
   ];
 
-  // helpers
   function qs(name) {
     const u = new URL(location.href);
     return u.searchParams.get(name);
@@ -135,7 +134,6 @@
     });
   }
 
-  // elementos
   const imgEl = document.getElementById("produto-imagem");
   const nomeEl = document.getElementById("produto-nome");
   const precoEl = document.getElementById("produto-preco");
@@ -189,7 +187,6 @@
       comentInput.value = "";
     }
 
-    // Adicionar ao carrinho (sem tamanho)
     btnAdd.onclick = () => {
       const item = {
         id: p.id,
